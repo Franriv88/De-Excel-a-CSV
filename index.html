@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertidor de Excel a CSV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Convertidor de Excel a CSV</h1>
+
+<div id="drop-area" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
+  Arrastra y suelta tu archivo Excel aquí
+</div>
+
+<button id="download-btn" onclick="descargarCSV()" disabled>Descargar CSV</button>
+
+<script src="xlsx.full.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
